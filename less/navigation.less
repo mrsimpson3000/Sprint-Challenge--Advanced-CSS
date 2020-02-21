@@ -5,12 +5,12 @@
   background-color: @nav-bg;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-content: center;
+  align-items: center;
   padding-bottom: 10px;
   border-bottom: 2px solid @nav-border;
 
   div {
-    width: 33%;
+    width: 100%;
     text-align: center;
 
     h1 {
@@ -22,9 +22,11 @@
 
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
-    width: 33%;
+    max-width: 600px;
+    width: 100%;
+    padding: 0 5%;
   }
 
   a {

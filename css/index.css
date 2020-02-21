@@ -166,12 +166,12 @@ p {
   background-color: #F6F6F6;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-content: center;
+  align-items: center;
   padding-bottom: 10px;
   border-bottom: 2px solid #F1F1F1;
 }
 .nav div {
-  width: 33%;
+  width: 100%;
   text-align: center;
 }
 .nav div h1 {
@@ -181,9 +181,11 @@ p {
 }
 .nav nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
-  width: 33%;
+  max-width: 600px;
+  width: 100%;
+  padding: 0 5%;
 }
 .nav a {
   text-decoration: none;
@@ -210,6 +212,9 @@ footer {
 }
 .top-image {
   border-radius: 5px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
 .intro h2 {
   padding: 15px;
