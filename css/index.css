@@ -85,7 +85,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -119,7 +118,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -160,6 +159,36 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  background-color: #F6F6F6;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+  color: #454A59;
+  padding-bottom: 10px;
+}
+.nav div {
+  width: 33%;
+  text-align: center;
+}
+.nav div h1 {
+  font-size: 5rem;
+  padding-bottom: 20px;
+}
+.nav nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 33%;
+}
+.nav a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 1.8rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +198,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .top-image {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
